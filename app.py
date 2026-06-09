@@ -282,30 +282,20 @@ def profile():
 
     cur = mysql.connection.cursor()
 
-    # Get user details
+    # Get user details including resume
     cur.execute(
-        "SELECT name, email FROM users WHERE email=%s",
+        "SELECT name, email, resume FROM users WHERE email=%s",
         (email,)
     )
 
     user = cur.fetchone()
 
-    # Count applications
-    cur.execute(
-        "SELECT COUNT(*) FROM applications WHERE user_email=%s",
-        (email,)
-    )
-
-    total_applications = cur.fetchone()[0]
-
     cur.close()
 
     return render_template(
         "profile.html",
-        user=user,
-        total_applications=total_applications
+        user=user
     )
-
 # JOB DETAILS
 @app.route('/job/<int:id>')
 def job_details(id):

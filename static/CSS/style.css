@@ -41,17 +41,34 @@ h2 {
     font-weight: bold;
 }
 body{
-    background:#f5f7fa;
+    background:#f4f6f9;
 }
 
 .card{
-    border-radius:15px;
+    border-radius:10px;
 }
 
 .btn{
-    border-radius:10px;
+    border-radius:6px;
+}
+
+.form-control{
+    background:#f8f9fa;
 }
 
 h2,h4{
     font-weight:bold;
+}
+.btn{
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-dark{
+    padding: 10px 18px;
+}
+
+.btn-outline-dark,
+.btn-outline-danger{
+    padding: 10px 18px;
 }

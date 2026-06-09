@@ -1,61 +1,79 @@
-Online Job Portal
-📌 Project Overview
 
-The Online Job Portal is a web-based application developed using Python Flask and MySQL. It provides a platform for job seekers to register, log in, manage their profiles, upload resumes, search for jobs, and apply for available positions. The system also includes an Admin Panel for managing users and job postings.
+# 🧑‍💻 Online Job Portal
 
-This project was developed as a Final Year BCA Project to demonstrate web development, database management, user authentication, file handling, and CRUD operations.
+## 📌 Project Overview
 
-🚀 Features
-User Module
-User Registration
-User Login & Logout
-User Dashboard
-Profile Management
-Edit Profile
-Resume Upload
-View Uploaded Resume
-Search Jobs
-View Available Jobs
-Apply for Jobs
-My Applications
-Dashboard Statistics
-Job Management
-Add New Job
-View Jobs
-Search Jobs
-Delete Jobs
-Admin Module
-Admin Panel
-View All Users
-View All Jobs
-Delete Users
-Delete Jobs
-Security Features
-Session-Based Authentication
-Protected Dashboard Access
-Protected Profile Access
-User Login Validation
+The **Online Job Portal** is a web-based application developed using **Python Flask and MySQL**. It provides a platform for job seekers to register, log in, manage profiles, upload resumes, search for jobs, and apply for available positions.
 
+The system also includes an **Admin Panel** for managing users and job postings.
 
-🛠️ Technologies Used
-Frontend
-HTML5
-CSS3
-Bootstrap 5
-Jinja2 Templates
-Backend
-Python
-Flask
-Database
-MySQL
-Development Tools
-Visual Studio Code (VS Code)
-Git
-GitHub
-MySQL Workbench
+This project was developed as a **Final Year BCA Project** to demonstrate skills in:
+- Web Development
+- Database Management
+- User Authentication
+- File Handling
+- CRUD Operations
 
+---
 
-📂 Project Structure
+## 🚀 Features
+
+### 👤 User Module
+- User Registration
+- User Login & Logout
+- User Dashboard
+- Profile Management
+- Edit Profile
+- Resume Upload & View
+- Job Search
+- View Available Jobs
+- Apply for Jobs
+- My Applications
+
+---
+
+### 🧑‍💼 Admin Module
+- Admin Login Panel
+- View All Users
+- View All Jobs
+- Delete Users
+- Delete Jobs
+
+---
+
+### 🔐 Security Features
+- Session-Based Authentication
+- Protected Routes
+- Login Validation
+- Secure Access to Dashboard & Profile
+
+---
+
+## 🛠️ Technologies Used
+
+### 🎨 Frontend
+- HTML5
+- CSS3
+- Bootstrap 5
+- Jinja2 Templates
+
+### ⚙️ Backend
+- Python
+- Flask
+
+### 🗄️ Database
+- MySQL
+
+### 🧰 Tools
+- Visual Studio Code (VS Code)
+- Git & GitHub
+- MySQL Workbench
+
+---
+
+## 📂 Project Structure
+
+```bash
 Online-Job-Portal/
 │
 ├── static/
@@ -77,71 +95,76 @@ Online-Job-Portal/
 │
 ├── app.py
 └── README.md
+```
+
+---
+
+## 🗄️ Database Structure
+
+### 👤 users
+- id (Primary Key)
+- name
+- email
+- password
+- resume
+
+---
+
+### 💼 jobs
+- id (Primary Key)
+- title
+- company
+- location
+- salary
+- description
+
+---
+
+### 📝 applications
+- id (Primary Key)
+- user_email
+- job_id
+
+---
+
+## 🎯 Learning Outcomes
+
+- Flask Web Development
+- MySQL Integration
+- CRUD Operations
+- Authentication System
+- Session Management
+- File Upload Handling
+- UI Design with Bootstrap
+- Git & GitHub Version Control
+
+---
 
 
-🗄️ Database Tables
-users
-id
-name
-email
-password
-resume
-jobs
-id
-title
-company
-location
-salary
-description
-applications
-id
-user_email
-job_id
+## 🌟 Future Enhancements
+
+- Email Notifications
+- Password Encryption (Hashing)
+- Profile Picture Upload
+- Job Category System
+- Advanced Job Filtering
+- Application Status Tracking
+- Deployment on Cloud (AWS / Render / Railway)
+
+---
+
+## 👩‍💻 Author
+
+**Alisha Bagwan**  
+Bachelor of Computer Applications (BCA)  
+Final Year Project
+
+---
+
+## 📌 Note
+
+This project is created for academic learning purposes and demonstrates full-stack web development using Flask and MySQL.
 
 
-📸 Project Screens
-Home Page
-Registration Page
-Login Page
-Dashboard
-Profile Page
-Resume Upload Page
-Add Job Page
-Jobs Listing Page
-My Applications Page
-Admin Panel
 
 
-🎯 Learning Outcomes
-
-Through this project, I learned:
-
-Flask Web Development
-MySQL Database Integration
-CRUD Operations
-User Authentication
-Session Management
-File Upload Handling
-Bootstrap UI Design
-Database Design
-Git & GitHub Version Control
-
-
-👩‍💻 Author
-
-Alisha Bagwan
-
-Bachelor of Computer Applications (BCA)
-
-🌟 Future Enhancements
-
-
-Application Status Tracking
-Profile Picture Upload
-Contact Us Module
-Email Notifications
-Password Encryption
-Job Categories
-Advanced Job Filters
-Online Deployment
-Admin Authentication

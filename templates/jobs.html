@@ -90,15 +90,19 @@
 
                     <div class="d-grid gap-2">
 
-                        <a href="/apply/{{ job[0] }}"
-                           class="btn btn-success">
-                            Apply Now
-                        </a>
+                        <div class="d-flex gap-2 mt-3">
 
-                        <a href="/delete-job/{{ job[0] }}"
-                           class="btn btn-danger">
-                            Delete Job
-                        </a>
+    <a href="/apply/{{ job[0] }}"
+class="btn btn-primary">
+    Apply
+</a>
+
+ <a href="/delete-job/{{ job[0] }}"
+class="btn btn-outline-secondary">
+    Delete
+</a>
+
+</div>
 
                     </div>
 
